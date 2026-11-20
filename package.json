@@ -1,0 +1,31 @@
+{
+  "name": "mcp-guard",
+  "version": "1.0.0",
+  "description": "Zero-dependency CLI security auditor for MCP servers, AI agent rule files, and local workspace configs.",
+  "type": "module",
+  "bin": {
+    "mcp-guard": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "test": "npm run build && node --test dist/test/**/*.test.js"
+  },
+  "keywords": [
+    "mcp",
+    "security",
+    "ai-agents",
+    "cli",
+    "audit",
+    "linter"
+  ],
+  "author": "nirbhontop",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
